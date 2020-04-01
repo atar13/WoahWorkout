@@ -12,9 +12,6 @@ class SettingsNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.largeContentTitle = "Settings"
-        title = "Settings"
         
         navigationBar.prefersLargeTitles = false
         navigationBar.isTranslucent = true

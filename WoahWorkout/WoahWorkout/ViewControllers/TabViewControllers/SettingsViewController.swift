@@ -15,6 +15,7 @@ class SettingsViewController: UIViewController {
 
         view.backgroundColor = .gray
         
+        title = "Settings"
         
         // Do any additional setup after loading the view.
     }

@@ -14,6 +14,8 @@ class DataViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .blue
+        
+        title = "Data"
         // Do any additional setup after loading the view.
     }
     

@@ -11,6 +11,8 @@
 		80915BFA242D964D00ECCB7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80915BF9242D964D00ECCB7A /* SceneDelegate.swift */; };
 		80915C01242D964E00ECCB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80915C00242D964E00ECCB7A /* Assets.xcassets */; };
 		80915C04242D964E00ECCB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80915C02242D964E00ECCB7A /* LaunchScreen.storyboard */; };
+		80DB49F52434532E006B2423 /* WorkoutNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DB49F42434532D006B2423 /* WorkoutNavigationController.swift */; };
+		80DB49F7243458B7006B2423 /* DataNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DB49F6243458B7006B2423 /* DataNavigationController.swift */; };
 		80E58D5324341B00006B81E5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5224341B00006B81E5 /* MainTabBarController.swift */; };
 		80E58D5624341F1E006B81E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5524341F1E006B81E5 /* StartViewController.swift */; };
 		80E58D582434294A006B81E5 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D572434294A006B81E5 /* WorkoutViewController.swift */; };
@@ -26,6 +28,8 @@
 		80915C00242D964E00ECCB7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80915C03242D964E00ECCB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80915C05242D964E00ECCB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DB49F42434532D006B2423 /* WorkoutNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutNavigationController.swift; sourceTree = "<group>"; };
+		80DB49F6243458B7006B2423 /* DataNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNavigationController.swift; sourceTree = "<group>"; };
 		80E58D5224341B00006B81E5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		80E58D5524341F1E006B81E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		80E58D572434294A006B81E5 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				80E58D5C24342B26006B81E5 /* SettingsNavigationController.swift */,
+				80DB49F42434532D006B2423 /* WorkoutNavigationController.swift */,
+				80DB49F6243458B7006B2423 /* DataNavigationController.swift */,
 			);
 			path = NavigationControllers;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 				80E58D5D24342B26006B81E5 /* SettingsNavigationController.swift in Sources */,
 				80E58D5624341F1E006B81E5 /* StartViewController.swift in Sources */,
 				80915BF8242D964D00ECCB7A /* AppDelegate.swift in Sources */,
+				80DB49F7243458B7006B2423 /* DataNavigationController.swift in Sources */,
 				80E58D5324341B00006B81E5 /* MainTabBarController.swift in Sources */,
 				80915BFA242D964D00ECCB7A /* SceneDelegate.swift in Sources */,
 				80E58D5F24342BA7006B81E5 /* SettingsViewController.swift in Sources */,
+				80DB49F52434532E006B2423 /* WorkoutNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

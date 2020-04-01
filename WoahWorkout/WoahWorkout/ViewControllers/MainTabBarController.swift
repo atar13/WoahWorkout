@@ -27,17 +27,19 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         
+        let workoutNC = WorkoutNavigationController(rootViewController: workoutVC)
+        let dataNC = DataNavigationController(rootViewController: dataVC)
         let settingsNC = SettingsNavigationController(rootViewController: settingsVC)
 
-        let tabBarViewControllers: [UIViewController] = [startVC, workoutVC, dataVC, settingsNC]
+        let tabBarViewControllers: [UIViewController] = [startVC, workoutNC, dataNC, settingsNC]
    
         setViewControllers(tabBarViewControllers, animated: true)
         
 
         
         configTabBarProperties(viewController: startVC, tabBarTitle: "Start", tabBarImageName: "StartTab")
-        configTabBarProperties(viewController: workoutVC, tabBarTitle: "Workout", tabBarImageName: "WorkoutTab")
-        configTabBarProperties(viewController: dataVC, tabBarTitle: "Data", tabBarImageName: "DataTab")
+        configTabBarProperties(viewController: workoutNC, tabBarTitle: "Workout", tabBarImageName: "WorkoutTab")
+        configTabBarProperties(viewController: dataNC, tabBarTitle: "Data", tabBarImageName: "DataTab")
         configTabBarProperties(viewController: settingsNC, tabBarTitle: "Settings", tabBarImageName: "SettingsTab")
         
 

@@ -1,5 +1,5 @@
 //
-//  WorkoutViewController.swift
+//  DataNavigationController.swift
 //  WoahWorkout
 //
 //  Created by Anthony Tarbinian on 3/31/20.
@@ -8,17 +8,13 @@
 
 import UIKit
 
-class WorkoutViewController: UIViewController {
+class DataNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
-        
-        title = "Workouts"
-        
-        
-        
+        navigationBar.prefersLargeTitles = true
+        navigationBar.isTranslucent = true
         // Do any additional setup after loading the view.
     }
     
