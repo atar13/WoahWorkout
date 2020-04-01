@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  WorkoutViewController.swift
 //  WoahWorkout
 //
 //  Created by Anthony Tarbinian on 3/31/20.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class WorkoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
-        title = "Start"
 
-        
+        view.backgroundColor = .red
         // Do any additional setup after loading the view.
     }
     

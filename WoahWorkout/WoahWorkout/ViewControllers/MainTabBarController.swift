@@ -11,7 +11,12 @@ import UIKit
 class MainTabBarController: UITabBarController {
 
     
-    let startTab = UITabBarItem()
+    let startVC = StartViewController()
+    let workoutVC = WorkoutViewController()
+    let dataVC = DataViewController()
+    let settingsVC = SettingsViewController()
+    
+    
     
     override func loadView() {
         super.loadView()
@@ -20,19 +25,22 @@ class MainTabBarController: UITabBarController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = .blue
         
-        let startVC = StartViewController()
         
-        setViewControllers([startVC], animated: true)
+        let settingsNC = SettingsNavigationController(rootViewController: settingsVC)
+
+        let tabBarViewControllers: [UIViewController] = [startVC, workoutVC, dataVC, settingsNC]
+   
+        setViewControllers(tabBarViewControllers, animated: true)
         
-//        startTab.title = "Start"
-//        let startTabImage = UIImage(named: "StartTab")
-//        startTab.image = startTabImage
+
         
         configTabBarProperties(viewController: startVC, tabBarTitle: "Start", tabBarImageName: "StartTab")
+        configTabBarProperties(viewController: workoutVC, tabBarTitle: "Workout", tabBarImageName: "WorkoutTab")
+        configTabBarProperties(viewController: dataVC, tabBarTitle: "Data", tabBarImageName: "DataTab")
+        configTabBarProperties(viewController: settingsNC, tabBarTitle: "Settings", tabBarImageName: "SettingsTab")
+        
 
-        // Do any additional setup after loading the view.
     }
     
     

@@ -14,6 +14,10 @@
 		80915C04242D964E00ECCB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80915C02242D964E00ECCB7A /* LaunchScreen.storyboard */; };
 		80E58D5324341B00006B81E5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5224341B00006B81E5 /* MainTabBarController.swift */; };
 		80E58D5624341F1E006B81E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5524341F1E006B81E5 /* StartViewController.swift */; };
+		80E58D582434294A006B81E5 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D572434294A006B81E5 /* WorkoutViewController.swift */; };
+		80E58D5A2434295C006B81E5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D592434295C006B81E5 /* DataViewController.swift */; };
+		80E58D5D24342B26006B81E5 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5C24342B26006B81E5 /* SettingsNavigationController.swift */; };
+		80E58D5F24342BA7006B81E5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5E24342BA7006B81E5 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		80915C05242D964E00ECCB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80E58D5224341B00006B81E5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		80E58D5524341F1E006B81E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		80E58D572434294A006B81E5 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		80E58D592434295C006B81E5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		80E58D5C24342B26006B81E5 /* SettingsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
+		80E58D5E24342BA7006B81E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 		80E58D5024341AC1006B81E5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				80E58D5B24342AB8006B81E5 /* NavigationControllers */,
 				80E58D5424341ED5006B81E5 /* TabViewControllers */,
 				80E58D5224341B00006B81E5 /* MainTabBarController.swift */,
 			);
@@ -90,8 +99,19 @@
 			isa = PBXGroup;
 			children = (
 				80E58D5524341F1E006B81E5 /* StartViewController.swift */,
+				80E58D572434294A006B81E5 /* WorkoutViewController.swift */,
+				80E58D592434295C006B81E5 /* DataViewController.swift */,
+				80E58D5E24342BA7006B81E5 /* SettingsViewController.swift */,
 			);
 			path = TabViewControllers;
+			sourceTree = "<group>";
+		};
+		80E58D5B24342AB8006B81E5 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80E58D5C24342B26006B81E5 /* SettingsNavigationController.swift */,
+			);
+			path = NavigationControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,11 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E58D582434294A006B81E5 /* WorkoutViewController.swift in Sources */,
+				80E58D5A2434295C006B81E5 /* DataViewController.swift in Sources */,
+				80E58D5D24342B26006B81E5 /* SettingsNavigationController.swift in Sources */,
 				80E58D5624341F1E006B81E5 /* StartViewController.swift in Sources */,
 				80915BFC242D964D00ECCB7A /* ViewController.swift in Sources */,
 				80915BF8242D964D00ECCB7A /* AppDelegate.swift in Sources */,
 				80E58D5324341B00006B81E5 /* MainTabBarController.swift in Sources */,
 				80915BFA242D964D00ECCB7A /* SceneDelegate.swift in Sources */,
+				80E58D5F24342BA7006B81E5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

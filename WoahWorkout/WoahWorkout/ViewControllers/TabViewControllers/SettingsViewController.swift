@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  SettingsViewController.swift
 //  WoahWorkout
 //
 //  Created by Anthony Tarbinian on 3/31/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
-        title = "Start"
 
+        view.backgroundColor = .gray
+        
         
         // Do any additional setup after loading the view.
     }
