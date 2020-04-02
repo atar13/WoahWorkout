@@ -10,13 +10,20 @@ import UIKit
 
 class DataNavigationController: UINavigationController {
 
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationBar.prefersLargeTitles = true
+        navigationBar.prefersLargeTitles = false
         navigationBar.isTranslucent = true
-        // Do any additional setup after loading the view.
+        
+    
+        
+
     }
+    
+
     
 
     /*

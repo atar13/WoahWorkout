@@ -9,6 +9,8 @@
 import UIKit
 
 class DataViewController: UIViewController {
+    
+    let jsonLabel = UILabel(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +18,48 @@ class DataViewController: UIViewController {
         view.backgroundColor = .blue
         
         title = "Data"
-        // Do any additional setup after loading the view.
+        
+        
+        let displayButton = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(readJson))
+        
+        navigationItem.rightBarButtonItem = displayButton
+
+        jsonLabel.translatesAutoresizingMaskIntoConstraints = false
+        jsonLabel.text = "x"
+               
+//               view.addSubview(jsonLabel)
+               
+//               view.addConstraints([
+//                      jsonLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+//                      jsonLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+//                  ])
+
+
+     
     }
     
+     @objc func readJson(){
+            let path = Bundle.main.path(forResource: "workouts", ofType: "json")
+    //        print(path!)
+            
+            let url = URL(fileURLWithPath: path!)
+//            print(url)
+            
+            let data = try! Data(contentsOf: url)
+            let obj = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
+//            print(obj)
+            
+            if let str = (obj as! NSDictionary).value(forKey: "workout"){
+                self.jsonLabel.text = str as? String ?? ""
+        }
+        
+        
+//        print(txt)
+
+        }
+        
+    
+   
 
     /*
     // MARK: - Navigation

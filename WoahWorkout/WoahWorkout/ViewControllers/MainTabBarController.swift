@@ -35,8 +35,6 @@ class MainTabBarController: UITabBarController {
    
         setViewControllers(tabBarViewControllers, animated: true)
         
-
-        
         configTabBarProperties(viewController: startVC, tabBarTitle: "Start", tabBarImageName: "StartTab")
         configTabBarProperties(viewController: workoutNC, tabBarTitle: "Workout", tabBarImageName: "WorkoutTab")
         configTabBarProperties(viewController: dataNC, tabBarTitle: "Data", tabBarImageName: "DataTab")
