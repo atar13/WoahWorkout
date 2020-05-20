@@ -12,13 +12,14 @@ class WorkoutViewController: UIViewController , UITableViewDataSource{
    
     let workoutSelectionVC = WorkoutSelectionVC()
 
-    var workoutArray:[String] = ["Sit Ups", "Planks"]
+    var workoutArray:[String] = ["Sit Ups", "Planks","idk","how many","more"]
+    
+    let workoutTableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let workoutTableView = UITableView(frame: .init(origin: .zero, size: view.frame.size))
-
+//        let workoutTableView = UITableView(frame: .init(origin: .zero, size: self.view.bounds.size))
 
         view.backgroundColor = .red
         
@@ -30,6 +31,7 @@ class WorkoutViewController: UIViewController , UITableViewDataSource{
         workoutTableView.dataSource = self
         workoutTableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(workoutTableView)
+        setupTableViewConstraints()
         
 //        view.addConstraints([
 //            workoutTableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -37,6 +39,13 @@ class WorkoutViewController: UIViewController , UITableViewDataSource{
 //        ])
     }
     
+    func setupTableViewConstraints(){
+        workoutTableView.translatesAutoresizingMaskIntoConstraints = false
+        workoutTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        workoutTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        workoutTableView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        workoutTableView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
     
     @objc func openWorkoutSelector(){
         present(workoutSelectionVC, animated: true, completion: nil)
@@ -46,7 +55,7 @@ class WorkoutViewController: UIViewController , UITableViewDataSource{
             workoutArray.count
        }
        
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = UITableViewCell()
         cell.textLabel?.text = workoutArray[indexPath.item]
         return cell

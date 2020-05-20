@@ -10,13 +10,47 @@ import UIKit
 
 class WorkoutSelectionVC: UIViewController {
 
+    //put the saving json stuff into viewWillDissappear
+    
+    let backButton = UIButton()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .darkGray
+        setupBackButton()
+      
+     
+        view.backgroundColor = .blue
         // Do any additional setup after loading the view.
+        
+        
+
+        
+        
     }
     
+    
+    @objc func dismissVC() {
+        self.dismiss(animated: true, completion: nil)
+    }
+  
+    func setupBackButton(){
+//        backButton.frame = .init(origin: .zero, size: self.view.bounds.size)
+        backButton.backgroundColor = .red
+        backButton.setTitle("Back", for: .normal)
+        backButton.setTitleColor(.black, for: .normal)
+        backButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
+        view.addSubview(backButton)
+        setupBackButtonConstraints()
+    }
+    
+    func setupBackButtonConstraints(){
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+        backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
+        backButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
+        backButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        backButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100).isActive = true
+    }
 
     /*
     // MARK: - Navigation

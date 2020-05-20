@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8034429B2474E62D006248B7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034429A2474E62D006248B7 /* Utilities.swift */; };
 		80733CAF2435D7D000593BF9 /* WorkoutSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80733CAE2435D7D000593BF9 /* WorkoutSelectionVC.swift */; };
 		80915BF8242D964D00ECCB7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80915BF7242D964D00ECCB7A /* AppDelegate.swift */; };
 		80915BFA242D964D00ECCB7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80915BF9242D964D00ECCB7A /* SceneDelegate.swift */; };
@@ -15,7 +16,6 @@
 		80DB49F52434532E006B2423 /* WorkoutNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DB49F42434532D006B2423 /* WorkoutNavigationController.swift */; };
 		80DB49F7243458B7006B2423 /* DataNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DB49F6243458B7006B2423 /* DataNavigationController.swift */; };
 		80DB49F924354EF6006B2423 /* workouts.json in Resources */ = {isa = PBXBuildFile; fileRef = 80DB49F824354EF6006B2423 /* workouts.json */; };
-		80DB49FD2435A5C8006B2423 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DB49FC2435A5C8006B2423 /* CommonMethods.swift */; };
 		80E58D5324341B00006B81E5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5224341B00006B81E5 /* MainTabBarController.swift */; };
 		80E58D5624341F1E006B81E5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D5524341F1E006B81E5 /* StartViewController.swift */; };
 		80E58D582434294A006B81E5 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E58D572434294A006B81E5 /* WorkoutViewController.swift */; };
@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8034429A2474E62D006248B7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		80733CAE2435D7D000593BF9 /* WorkoutSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSelectionVC.swift; sourceTree = "<group>"; };
 		80915BF4242D964D00ECCB7A /* WoahWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoahWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80915BF7242D964D00ECCB7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		80DB49F42434532D006B2423 /* WorkoutNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutNavigationController.swift; sourceTree = "<group>"; };
 		80DB49F6243458B7006B2423 /* DataNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNavigationController.swift; sourceTree = "<group>"; };
 		80DB49F824354EF6006B2423 /* workouts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = workouts.json; sourceTree = "<group>"; };
-		80DB49FC2435A5C8006B2423 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		80E58D5224341B00006B81E5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		80E58D5524341F1E006B81E5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		80E58D572434294A006B81E5 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 		80915BEB242D964D00ECCB7A = {
 			isa = PBXGroup;
 			children = (
+				8034429A2474E62D006248B7 /* Utilities.swift */,
 				80915BF6242D964D00ECCB7A /* WoahWorkout */,
 				80915BF5242D964D00ECCB7A /* Products */,
 			);
@@ -81,7 +82,6 @@
 				80915C00242D964E00ECCB7A /* Assets.xcassets */,
 				80915C02242D964E00ECCB7A /* LaunchScreen.storyboard */,
 				80915C05242D964E00ECCB7A /* Info.plist */,
-				80DB49FC2435A5C8006B2423 /* CommonMethods.swift */,
 			);
 			path = WoahWorkout;
 			sourceTree = "<group>";
@@ -203,8 +203,8 @@
 				80E58D5624341F1E006B81E5 /* StartViewController.swift in Sources */,
 				80915BF8242D964D00ECCB7A /* AppDelegate.swift in Sources */,
 				80733CAF2435D7D000593BF9 /* WorkoutSelectionVC.swift in Sources */,
+				8034429B2474E62D006248B7 /* Utilities.swift in Sources */,
 				80DB49F7243458B7006B2423 /* DataNavigationController.swift in Sources */,
-				80DB49FD2435A5C8006B2423 /* CommonMethods.swift in Sources */,
 				80E58D5324341B00006B81E5 /* MainTabBarController.swift in Sources */,
 				80915BFA242D964D00ECCB7A /* SceneDelegate.swift in Sources */,
 				80E58D5F24342BA7006B81E5 /* SettingsViewController.swift in Sources */,
